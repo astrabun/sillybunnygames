@@ -10,7 +10,7 @@ function extractTitleFromInput(input: string): string {
 
 		// /wiki/Title
 		if (url.pathname.includes('/wiki/')) {
-			const seg = url.pathname.split('/wiki/')[1] ?? '';
+			const seg = url.pathname.split("/wiki/")[1] ?? '';
 			return decodeURIComponent(seg).replaceAll('_', ' ');
 		}
 
