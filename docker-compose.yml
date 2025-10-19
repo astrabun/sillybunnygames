@@ -1,0 +1,7 @@
+services:
+  bot:
+    build: .
+    env_file:
+      - .env
+    command: pnpm start
+    restart: unless-stopped
