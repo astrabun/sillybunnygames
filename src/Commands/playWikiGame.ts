@@ -76,7 +76,7 @@ async function createGameCustom(startArg?: string, endArg?: string) {
 }
 
 export const data = new SlashCommandBuilder()
-	.setName('playwikigamecustom')
+	.setName('playwikigame')
 	.setDescription('Start a wiki speedrun. Optional start and/or end article (title or URL).')
 	.addStringOption(opt => opt.setName('start').setDescription('Start article title or URL').setRequired(false))
 	.addStringOption(opt => opt.setName('end').setDescription('End article title or URL').setRequired(false));
